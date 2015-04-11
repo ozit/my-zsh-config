@@ -1,0 +1,199 @@
+#
+# This file is part of My Zsh Config
+# 
+# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr> 
+# Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
+#
+# Distributed under the GNU GPL v2. For full terms see the file LICENSE.
+#
+
+# Create ~/.zsh/cache
+if [ ! -d "$HOME/.zsh/cache" ]; then
+    mkdir -p $HOME/.zsh/cache
+fi
+
+# Setup z
+_Z_DATA="$HOME/.zsh/z"
+
+# Path to your oh-my-zsh installation.
+export ZSH=/opt/robbyrussell/oh-my-zsh
+
+# Path to your my-zsh-config installation.
+export ZSH_MY_ZSH_CONFIG=/opt/ozit/my-zsh-config
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="${ZSH_THEME:-ozit}"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+ZSH_CUSTOM=$ZSH_MY_ZSH_CONFIG/custom
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+
+# You can override plugins in /etc/zshenv
+if [[ -z "$plugins" ]]; then
+    plugins=(colored-man colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
+fi
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+
+################################################################## Windows title
+case ${TERM} in
+    xterm*|screen|cygwin)
+        precmd () {echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"}
+        ;;
+    *)
+        ;;
+esac
+
+
+
+######################################################################## History
+HISTFILE=~/.zsh/history
+
+# If a new command line being added to the history list duplicates an older one,
+# the older command is removed from the list (even if it is not the previous
+# event). 
+setopt hist_ignore_all_dups
+
+# When searching for history entries in the line editor, do not display
+# duplicates of a line previously found, even if the duplicates are not
+# contiguous. 
+setopt hist_find_no_dups
+
+
+
+######################################################################## Options
+# Enable correction
+setopt correctall
+
+# Do not query the user before executing rm * or rm path/*. 
+unsetopt rm_star_silent # Ask confirmation for 'rm *'
+
+## Push
+setopt pushd_silent
+setopt pushd_to_home
+
+## No beep
+unsetopt beep
+unsetopt hist_beep
+unsetopt list_beep
+
+
+
+##################################################################### Completion
+## Use cache
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path $HOME/.zsh/cache
+
+# If this option is set completions are shown only if the completions don't have
+# an unambiguous prefix or suffix that could be inserted in the command line. 
+unsetopt list_ambiguous
+
+# When the last character resulting from a completion is a slash and the
+# next character typed is a word delimiter, remove the slash. 
+setopt auto_remove_slash
+
+## cd
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+
+## Prevent to propose a item already prpose
+zstyle ':completion:*:rm:*' ignore-line yes
+zstyle ':completion:*:mv:*' ignore-line yes
+zstyle ':completion:*:cp:*' ignore-line yes
+
+## killall
+zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
+
+
+
+######################################################################## Bindkey
+bindkey '^\e' insert-last-word # Like !$ with escape
+
+
+
+######################################################################## Aliases
+
+## Classic
+alias df='df -h'
+alias ll='ls -lh'
+alias lla='ls -lAh'
+alias more='less'
+alias diff='colordiff'
+
+## Bad reflex correction
+alias q!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
+alias x!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
+
+## Misc
+alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '	
+
+## Aliases from RH root
+alias dmesg='dmesg|less'
