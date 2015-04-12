@@ -11,4 +11,4 @@
 echo "${fg[${ZSH_HOST_COLOR}]}$(uptime)"
 echo "Kernel: $(uname -r) ($(uname -v))${reset_color}"
 echo ""
-[ -f /usr/bin/fortune ] && fortune "${ZSH_FORTUNE_ARG:-}" && echo ""
+[ -f /bin/fortune ] && fortune "${ZSH_FORTUNE_ARG:-}" && echo ""

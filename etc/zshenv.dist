@@ -18,4 +18,5 @@ plugins=(bower capistrano colored-man common-aliases composer cp git git-extras 
 ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes/"
 
 # Set theme
+ZSH_THEME="ozit"
 #ZSH_THEME="ozit-simple"
