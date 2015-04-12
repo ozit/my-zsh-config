@@ -9,7 +9,7 @@
 
 # You can override ZSH_HOST_COLOR in /etc/zshenv
 if [[ -z "$ZSH_HOST_COLOR" ]]; then
-    ZSH_HOST_COLOR=blue
+    ZSH_HOST_COLOR=magenta
 fi
 
 # For root and user
