@@ -8,7 +8,7 @@
 #
 
 # Override HOST_COLOR from ozit.zsh.theme and motd plugin
-ZSH_HOST_COLOR=blue
+ZSH_HOST_COLOR=magenta
 
 # Override plugins list
 plugins=(bower capistrano colored-man common-aliases composer cp git git-extras git-flow history npm phing screen sudo symfony2 systemadmin systemd vagrant z)
