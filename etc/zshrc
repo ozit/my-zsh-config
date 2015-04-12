@@ -26,6 +26,7 @@ export ZSH_MY_ZSH_CONFIG=/opt/ozit/my-zsh-config
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="${ZSH_THEME:-ozit}"
+#ZSH_THEME="ozit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
