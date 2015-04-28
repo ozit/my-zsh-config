@@ -3,6 +3,8 @@ Setup
 * Backup old configuration
 
 mkdir ~/oldzsh
+
+
 mv *.zsh* ~/oldzsh
 
 
