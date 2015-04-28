@@ -4,7 +4,6 @@ Setup
 
 mkdir ~/oldzsh
 
-
 mv *.zsh* ~/oldzsh
 
 
