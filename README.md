@@ -4,7 +4,7 @@ Setup
 ~~~
 mkdir ~/oldzsh
 mv *.zsh* ~/oldzsh
-
+~~~
 * First install  [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh):
 ~~~
 mkdir /opt/robbyrussell
