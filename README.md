@@ -5,7 +5,7 @@ Setup
 mkdir ~/oldzsh
 mv *.zsh* ~/oldzsh
 ~~~
-* Download French adage
+* Download French adage [fortune-fr.org](http://www.fortunes-fr.org/#download)
 
 * First install  [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh):
 ~~~
