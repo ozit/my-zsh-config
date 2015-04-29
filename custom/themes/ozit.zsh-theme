@@ -1,7 +1,7 @@
 #
 # This file is part of My Zsh Config
 #
-# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr>
+# Copyright (c) 2014 Arie OZIEL <ozit@free.fr>
 # Copyright (c) 2015 Ozit <ozit@free.fr>
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
