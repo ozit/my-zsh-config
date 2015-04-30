@@ -3,6 +3,7 @@
 Plugin for [eZ Publish 4](http://ez.no), a PHP CMS. 
 
 ### Alias
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 * __ez4cl__: Purge cache.
 

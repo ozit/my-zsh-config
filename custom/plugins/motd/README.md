@@ -3,6 +3,7 @@
 Plugin provided a motd like.
 
 ### Requiere
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 * [fortune](http://en.wikipedia.org/wiki/Fortune_%28Unix%29).
 

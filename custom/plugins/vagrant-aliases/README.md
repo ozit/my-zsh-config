@@ -3,6 +3,7 @@
 Plugin provided aliases for [Vagrant](http://www.vagrantup.com/). 
 
 ### Alias
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 * __vup__: Start the box.
 

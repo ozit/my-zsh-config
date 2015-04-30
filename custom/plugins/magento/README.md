@@ -3,6 +3,7 @@
 Plugin for [Magento](http://magento.com/), a Ecommerce Platform Solutions in PHP. 
 
 ### Requiere
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 * [Magento shell tools cache component](https://github.com/ticean/magento-shell-tools/blob/master/shell/cache.php) by Ticean Bennett.
 

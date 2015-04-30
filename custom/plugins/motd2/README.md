@@ -3,6 +3,7 @@
 Plugin provided a motd like.
 
 ### Example
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 ~~~
 Today is:		 jeu. oct. 2 07:51:48 CEST 2014

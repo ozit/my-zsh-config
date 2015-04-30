@@ -3,6 +3,7 @@
 Fix some [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)/[Kitty](http://www.9bis.net/kitty/) issues with ZSH:
 * Numpad.
 * Home / end.
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 
 ### Setup Putty
 

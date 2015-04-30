@@ -3,6 +3,7 @@
 #
 # Copyright (c) 2014 Arie OZIEL <ozit@free.fr>
 # Copyright (c) 2015 Ozit <ozit@free.fr>
+# Thank to Guillaume Kulakwski (https://github.com/llaumgui)
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
