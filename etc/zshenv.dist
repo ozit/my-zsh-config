@@ -16,6 +16,7 @@ plugins=(bower capistrano colored-man common-aliases composer cp git git-extras 
 
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
+#ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes"
 ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes/"
 
 # Set theme
