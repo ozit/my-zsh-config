@@ -33,4 +33,6 @@ cat /opt/ozit/my-zsh-config/etc/zshrc > /etc/zsh/zshrc
 cat /opt/ozit/my-zsh-config/etc/zshenv.dist >> /etc/zsh/zshenv
 ~~~
 
+(may you have to set path for "Fortune" in zshenv)
+
 * Enjoy !
