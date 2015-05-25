@@ -27,8 +27,8 @@ cat /opt/ozit/my-zsh-config/etc/zshrc > /etc/zshrc
 cat /opt/ozit/my-zsh-config/etc/zshenv.dist >> /etc/zshenv
 ~~~
 ~~~
-cp /etc/zshrc /etc/zsh/zshrc.back
-cp /etc/zshenv /etc/zsh/zshenv.back
+cp /etc/zsh/zshrc /etc/zsh/zshrc.back
+cp /etc/zsh/zshenv /etc/zsh/zshenv.back
 cat /opt/ozit/my-zsh-config/etc/zshrc > /etc/zsh/zshrc
 cat /opt/ozit/my-zsh-config/etc/zshenv.dist >> /etc/zsh/zshenv
 ~~~
