@@ -1,5 +1,9 @@
 Setup
 -----
+* Installation of packages
+~~~
+apt-get install zsh git
+~~~
 * Backup old configuration
 ~~~
 mkdir ~/oldzsh
