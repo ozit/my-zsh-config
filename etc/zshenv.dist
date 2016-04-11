@@ -20,7 +20,7 @@ ZSH_FORTUNE_BIN=/bin/fortune
 #ZSH_FORTUNE_BIN=/usr/games/fortune
 
 # Set argument to fortune in motd plugin
-#ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
+#ZSH_FORTUNE_ARG="/usr/share/games/fortunes-fr/"
 #ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes"
 ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes/"
 
