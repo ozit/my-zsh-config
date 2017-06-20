@@ -24,12 +24,14 @@ cd /opt/ozit
 git clone git://github.com/ozit/my-zsh-config.git
 ~~~
 * Deploy configuration:
+for fedora
 ~~~
 cp /etc/zshrc /etc/zshrc.back
 cp /etc/zshenv /etc/zshenv.back
 cat /opt/ozit/my-zsh-config/etc/zshrc > /etc/zshrc
 cat /opt/ozit/my-zsh-config/etc/zshenv.dist >> /etc/zshenv
 ~~~
+for debian
 ~~~
 cp /etc/zsh/zshrc /etc/zsh/zshrc.back
 cp /etc/zsh/zshenv /etc/zsh/zshenv.back
