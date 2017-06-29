@@ -13,15 +13,11 @@ mv *.zsh* ~/oldzsh
 
 * First install  [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh):
 ~~~
-mkdir /opt/robbyrussell
-cd /opt/robbyrussell
-git clone git://github.com/robbyrussell/oh-my-zsh.git
+git clone git://github.com/robbyrussell/oh-my-zsh.git /opt/robbyrussell
 ~~~
 * Install my configuration:
 ~~~
-mkdir /opt/ozit
-cd /opt/ozit
-git clone git://github.com/ozit/my-zsh-config.git
+git clone git://github.com/ozit/my-zsh-config.git /opt/robbyrussell
 ~~~
 * Deploy configuration:
 
