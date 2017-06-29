@@ -17,7 +17,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git /opt/robbyrussell
 ~~~
 * Install my configuration:
 ~~~
-git clone git://github.com/ozit/my-zsh-config.git /opt/robbyrussell
+git clone git://github.com/ozit/my-zsh-config.git /opt/ozit
 ~~~
 * Deploy configuration:
 
