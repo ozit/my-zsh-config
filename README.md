@@ -2,7 +2,7 @@ Setup
 -----
 * Installation of packages
 ~~~
-apt-get install zsh git fortunes-fr
+apt-get install zsh git fortunes-fr make
 ~~~
 * Backup old configuration
 ~~~
