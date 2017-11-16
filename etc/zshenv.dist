@@ -16,10 +16,10 @@ plugins=(bower capistrano colored-man common-aliases composer cp git git-extras 
 
 # Set binary to fortune in motd plugin
 #fedora
-ZSH_FORTUNE_BIN=/bin/fortune
+#ZSH_FORTUNE_BIN=/bin/fortune
 #ZSH_FORTUNE_BIN=/usr/bin/fortune
 #debian
-#ZSH_FORTUNE_BIN=/usr/games/fortune
+ZSH_FORTUNE_BIN=/usr/games/fortune
 
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortunes-fr/"
