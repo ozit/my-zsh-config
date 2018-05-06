@@ -2,7 +2,8 @@ Setup
 -----
 * Installation of packages
 for fedora
-~~~dnf install zsh git make fortune-mod
+~~~
+dnf install zsh git make fortune-mod
 ~~~
 for debian
 ~~~
