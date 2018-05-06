@@ -2,6 +2,12 @@ Setup
 -----
 * Installation of packages
 ~~~
+for fedora
+~~~
+dnf install zsh git make fortune-mod
+~~~
+for debian
+~~~
 apt-get install zsh git fortunes-fr make
 ~~~
 * Backup old configuration
