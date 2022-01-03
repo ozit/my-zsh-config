@@ -24,7 +24,9 @@ ZSH_FORTUNE_BIN=/usr/games/fortune
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortunes-fr/"
 #ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes"
-ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes/"
+#ZSH_FORTUNE_ARG="/usr/local/share/games/fortunes/"
+#debian 11
+ZSH_FORTUNE_ARG="fr"
 
 # Set theme
 ZSH_THEME="ozit"
