@@ -18,7 +18,7 @@ mv *.zsh* ~/oldzsh
 
 * First install  [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh):
 ~~~
-git clone git://github.com/robbyrussell/oh-my-zsh.git /opt/robbyrussell/oh-my-zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ~~~
 * Install my configuration:
 ~~~
