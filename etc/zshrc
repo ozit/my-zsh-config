@@ -70,7 +70,7 @@ ZSH_CUSTOM=$ZSH_MY_ZSH_CONFIG/custom
 
 # You can override plugins in /etc/zshenv
 if [[ -z "$plugins" ]]; then
-    plugins=(colored-man colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
+    plugins=(colored-man-pages colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
 fi
 source $ZSH/oh-my-zsh.sh
 
