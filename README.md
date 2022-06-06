@@ -22,7 +22,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 ~~~
 * Install my configuration:
 ~~~
-git clone git://github.com/ozit/my-zsh-config.git /opt/ozit/my-zsh-config
+git clone https://github.com/ozit/my-zsh-config.git /opt/ozit/my-zsh-config
 ~~~
 * Deploy configuration:
 
