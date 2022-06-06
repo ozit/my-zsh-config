@@ -12,7 +12,7 @@
 ZSH_HOST_COLOR=magenta
 
 # Override plugins list
-plugins=(bower capistrano colored-man common-aliases composer cp git git-extras git-flow history npm phing screen sudo symfony2 systemadmin systemd vagrant z motd)
+plugins=(bower capistrano colored-man-pages common-aliases composer cp git git-extras git-flow history npm phing screen sudo symfony2 systemadmin systemd vagrant z motd)
 
 # Set binary to fortune in motd plugin
 #fedora
